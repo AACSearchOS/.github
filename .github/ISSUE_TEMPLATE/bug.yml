@@ -1,43 +1,43 @@
-name: Bug report
-description: Report a reproducible AACSearch problem. Do not include credentials or customer data.
-title: "[Bug] "
+name: Сообщить об ошибке
+description: Опишите воспроизводимую ошибку AACSearch без ключей и данных клиентов.
+title: "[Ошибка] "
 body:
   - type: dropdown
     id: area
     attributes:
-      label: Area
+      label: Область
       options:
-        - Platform API
-        - Search engine
-        - Engine gateway
+        - API платформы
+        - Поисковый движок
+        - Внутренний шлюз
         - 1C-Bitrix
         - PrestaShop
         - Diafan CMS
-        - Documentation or SDK
-        - Other
+        - Документация или SDK
+        - Другое
     validations:
       required: true
   - type: textarea
     id: observed
     attributes:
-      label: What happened?
-      description: Include the observed result and the result you expected.
+      label: Что произошло?
+      description: Укажите фактический и ожидаемый результат.
     validations:
       required: true
   - type: textarea
     id: reproduce
     attributes:
-      label: Steps to reproduce
-      description: Use a minimal example with sanitized data.
+      label: Как воспроизвести?
+      description: Приведите короткий пример без конфиденциальных данных.
     validations:
       required: true
   - type: input
     id: version
     attributes:
-      label: Version or commit
-      description: Include the module and host platform versions when relevant.
+      label: Версия или коммит
+      description: Для модуля укажите также версию CMS или платформы магазина.
   - type: textarea
     id: evidence
     attributes:
-      label: Sanitized logs or screenshots
-      description: Remove API keys, personal data, customer documents, and internal hosts.
+      label: Логи или снимки экрана
+      description: Удалите ключи API, персональные данные, документы клиентов и внутренние адреса.

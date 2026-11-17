@@ -1,5 +1,5 @@
-# AACSearch GitHub profile
+# Профиль AACSearch на GitHub
 
-This repository owns the public AACSearchOS organization profile. Its banner and mark are in `assets/`; the visible profile is `profile/README.md`.
+Этот репозиторий оформляет публичную страницу организации [AACSearchOS](https://github.com/AACSearchOS). Главная страница находится в [profile/README.md](profile/README.md), обложка и логотип — в [assets/](assets/).
 
-Product implementation and architectural specifications have separate owners. Public releases will link to their own installation, compatibility, and security information.
+Правила написания имени и использования графики собраны в [BRAND.md](BRAND.md). Код платформы и архитектурные решения имеют отдельные закрытые репозитории; публичные модули и SDK появятся после проверки совместимости и установки.

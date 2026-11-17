@@ -1,35 +1,35 @@
-name: Feature proposal
-description: Describe the user need and a verifiable outcome.
-title: "[Feature] "
+name: Предложить возможность
+description: Опишите задачу пользователя и проверяемый результат.
+title: "[Предложение] "
 body:
   - type: textarea
     id: problem
     attributes:
-      label: User problem
-      description: Who needs this and what task are they trying to complete?
+      label: Задача пользователя
+      description: Кому нужна возможность и какую задачу она решает?
     validations:
       required: true
   - type: textarea
     id: outcome
     attributes:
-      label: Expected outcome
-      description: Describe observable behavior and acceptance conditions.
+      label: Ожидаемый результат
+      description: Опишите поведение и условия приёмки.
     validations:
       required: true
   - type: dropdown
     id: audience
     attributes:
-      label: Audience
+      label: Для кого
       options:
-        - Customer
-        - Developer
-        - Platform operator
-        - CMS merchant
-        - Internal
+        - Клиент
+        - Разработчик
+        - Оператор платформы
+        - Владелец сайта или магазина
+        - Внутренняя команда
     validations:
       required: true
   - type: textarea
     id: constraints
     attributes:
-      label: Constraints or related contracts
-      description: Link existing AACSearch issues, decisions, or contracts if known.
+      label: Ограничения и связанные контракты
+      description: Добавьте ссылки на известные задачи, решения или контракты AACSearch.
