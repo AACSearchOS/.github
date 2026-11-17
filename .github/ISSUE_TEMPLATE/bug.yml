@@ -1,0 +1,43 @@
+name: Bug report
+description: Report a reproducible AACSearch problem. Do not include credentials or customer data.
+title: "[Bug] "
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Platform API
+        - Search engine
+        - Engine gateway
+        - 1C-Bitrix
+        - PrestaShop
+        - Diafan CMS
+        - Documentation or SDK
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: What happened?
+      description: Include the observed result and the result you expected.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Use a minimal example with sanitized data.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      description: Include the module and host platform versions when relevant.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sanitized logs or screenshots
+      description: Remove API keys, personal data, customer documents, and internal hosts.

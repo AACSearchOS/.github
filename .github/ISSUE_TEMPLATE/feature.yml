@@ -1,0 +1,35 @@
+name: Feature proposal
+description: Describe the user need and a verifiable outcome.
+title: "[Feature] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: User problem
+      description: Who needs this and what task are they trying to complete?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Expected outcome
+      description: Describe observable behavior and acceptance conditions.
+    validations:
+      required: true
+  - type: dropdown
+    id: audience
+    attributes:
+      label: Audience
+      options:
+        - Customer
+        - Developer
+        - Platform operator
+        - CMS merchant
+        - Internal
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints or related contracts
+      description: Link existing AACSearch issues, decisions, or contracts if known.
